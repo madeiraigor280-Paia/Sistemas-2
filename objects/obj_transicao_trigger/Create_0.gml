@@ -1,0 +1,1 @@
+transicao = noone;

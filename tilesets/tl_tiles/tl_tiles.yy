@@ -1,0 +1,56 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_tiles",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"Grama agua","closed_edge":false,"name":"Grama agua","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[679,757,755,756,683,720,0,792,681,0,718,988,682,1058,1100,946,],},
+    {"$GMAutoTileSet":"","%Name":"Grama terra","closed_edge":false,"name":"Grama terra","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[415,380,378,379,343,278,0,241,341,0,279,242,342,307,309,382,],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":22,
+    "SerialiseWidth":28,
+    "TileCompressedData":[
+      -88,0,7,103,104,105,106,107,108,109,-21,0,7,140,141,142,143,144,145,146,-21,0,7,177,178,179,180,181,
+      182,183,-49,0,6,214,215,216,217,218,219,-9,0,5,19,20,21,22,23,-8,0,11,251,252,253,254,255,0,0,13,14,
+      15,16,-4,0,5,56,57,58,59,60,-8,0,11,288,289,290,291,292,0,0,50,51,52,53,-4,0,5,93,94,95,96,97,-15,0,
+      4,87,88,89,90,-4,0,5,130,131,132,133,134,-15,0,4,124,125,126,127,-33,0,3,168,169,170,-16,0,3,162,163,
+      164,-21,0,4,207,208,209,210,-24,0,4,244,245,246,247,-24,0,4,281,282,283,284,-10,0,7,430,431,432,433,
+      434,435,436,-7,0,4,318,319,320,321,-10,0,7,467,468,469,470,471,472,473,-21,0,7,504,505,506,507,508,509,
+      510,-10,0,9,355,356,357,358,359,360,361,362,363,-5,0,2,544,545,-12,0,9,392,393,394,395,396,397,398,399,
+      400,-37,0,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"tl_tiles",
+  "out_columns":37,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tiles",
+    "path":"sprites/spr_tiles/spr_tiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"pedra","frames":[
+        837,837,837,837,837,837,837,842,841,840,839,838,837,837,837,837,837,838,839,840,841,842,837,837,837,
+        837,837,837,837,837,838,837,
+      ],"name":"pedra","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":4.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":1369,
+}
