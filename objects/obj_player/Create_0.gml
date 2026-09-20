@@ -53,15 +53,15 @@ sprites		=	[
 
 					
 					//Sprites parado
-					[spr_player_idle_right, spr_player_idle_up, spr_player_idle_right, spr_player_idle_down],
+					[spr_player_pobre_idle_direita, spr_player_pobre_idle_up, spr_player_pobre_idle_direita, spr_player_pobre_idle_down],
 					//Sprites Correndo
-					[spr_player_run_right, spr_player_run_up, spr_player_run_right, spr_player_run_down],
+					[spr_player_pobre_andando_direita, spr_player_pobre_andando_up, spr_player_pobre_andando_direita, spr_player_pobre_andando_down],
 					//Ataque
-					[spr_player_attack_right, spr_player_attack_up, spr_player_attack_right, spr_player_attack_down],
+					[spr_player_pobre_ataque_direita, spr_player_pobre_ataque_up, spr_player_pobre_ataque_direita, spr_player_attack_down],
 					//Defesa
-					[spr_player_shield_right, spr_player_shield_up, spr_player_shield_right, spr_player_shield_down],
+					[spr_player_pobre_shield_direita, spr_player_pobre_shield_up, spr_player_pobre_shield_direita, spr_player_pobre_shield_down],
 					//Rolando
-					[spr_player_roll_right, spr_player_roll_up, spr_player_roll_right, spr_player_roll_down],
+					[spr_player_pobre_roll_direita, spr_player_pobre_roll_up, spr_player_pobre_roll_up, spr_player_pobre_roll_down],
 					//Dano
 					[spr_player_hurt_right, spr_player_hurt_up, spr_player_hurt_right, spr_player_hurt_down]
 					];
