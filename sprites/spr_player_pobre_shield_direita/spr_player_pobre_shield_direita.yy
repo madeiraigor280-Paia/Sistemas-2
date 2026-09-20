@@ -25,7 +25,7 @@
   ],
   "name":"spr_player_pobre_shield_direita",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Shield",
     "path":"folders/Sprites/Player/Pobre/Shield.yy",
@@ -83,7 +83,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":16,
+    "xorigin":9,
     "yorigin":32,
   },
   "swatchColours":null,

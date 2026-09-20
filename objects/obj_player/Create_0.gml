@@ -42,7 +42,7 @@ roll = false;
 //Imagem atual da animação
 image_ind = 0;
 //Velocidade da animação
-image_spd = 6 / room_speed;
+image_spd = 8 / room_speed;
 //Quantidade de imagens na minha sprite
 image_numb = 1;
 
@@ -57,7 +57,7 @@ sprites		=	[
 					//Sprites Correndo
 					[spr_player_pobre_andando_direita, spr_player_pobre_andando_up, spr_player_pobre_andando_direita, spr_player_pobre_andando_down],
 					//Ataque
-					[spr_player_pobre_ataque_direita, spr_player_pobre_ataque_up, spr_player_pobre_ataque_direita, spr_player_attack_down],
+					[spr_player_pobre_ataque_direita, spr_player_pobre_ataque_up, spr_player_pobre_ataque_direita, spr_player_pobre_ataque_down],
 					//Defesa
 					[spr_player_pobre_shield_direita, spr_player_pobre_shield_up, spr_player_pobre_shield_direita, spr_player_pobre_shield_down],
 					//Rolando
