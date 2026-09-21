@@ -61,11 +61,23 @@ sprites		=	[
 					//Defesa
 					[spr_player_pobre_shield_direita, spr_player_pobre_shield_up, spr_player_pobre_shield_direita, spr_player_pobre_shield_down],
 					//Rolando
-					[spr_player_pobre_roll_direita, spr_player_pobre_roll_up, spr_player_pobre_roll_up, spr_player_pobre_roll_down],
+					[spr_player_pobre_roll_direita, spr_player_pobre_roll_up, spr_player_pobre_roll_direita, spr_player_pobre_roll_down],
 					//Dano
 					[spr_player_hurt_right, spr_player_hurt_up, spr_player_hurt_right, spr_player_hurt_down]
 					];
 					
+					
+sprites_atacando = [
+	//Sprites no soco
+	[spr_player_pobre_ataque_direita, spr_player_pobre_ataque_up, spr_player_pobre_ataque_direita, spr_player_pobre_ataque_down],
+	//Espada
+	[spr_player_pobre_espada_direita, spr_player_pobre_espada_up, spr_player_pobre_espada_direita, spr_player_pobre_espada_down]
+	
+
+
+
+
+		];
 sprites_index = 0;
 
 //Mapeando a esquerda
@@ -106,6 +118,32 @@ ajusta_sprite = function(_indice_array)
 	image_ind %= image_numb;
 }
 
+ajusta_spr_ataque = function(_indice_array)
+{
+	//Checando se a sprite que eu estou usando é a que eu deveria estar usando
+	//Sprite de parado
+	//Sprite de ataque
+	//Isso quer dizer que eu acabei de chegar nesse estado (se a minha sprite esta errada)
+	if (sprite != sprites_atacando[_indice_array][face])
+	{
+		//Acabei de entrar no estado
+		//Garantindo que a animação começa do começo
+		image_ind = 0;
+		
+	}
+	
+	//Aplicando a sprite correta
+	sprite = sprites_atacando[_indice_array][face];
+	
+	//Descobrindo o image number da sprite que eu to usando
+	image_numb = sprite_get_number(sprite);
+	
+	//Aumentando o valor do image ind com base na image spd
+	image_ind += image_spd;
+	
+	//Zerando o image ind  depois da animação acabar
+	image_ind %= image_numb;
+}
 
 controla_player = function()
 {
@@ -253,7 +291,8 @@ estado_ataque = function()
 	estado_txt = "Ataque";
 	
 	//Ajustando a sprite
-	ajusta_sprite(2);
+	//ajusta_sprite(2);
+	ajusta_spr_ataque(global.spr_ind_arma-1)
 	
 	//Eu fico parado nesse estado
 	velh = 0;
@@ -329,7 +368,7 @@ estado_ataque_especial = function()
 			if (layer_exists("ataque_especial"))
 			{
 		
-				layer_destroy("ataque_especial")
+				layer_destroy("ataque_especial");
 			}
 
 		}

@@ -21,8 +21,10 @@ function ajusta_depth()
 	
 }
 
+
+
 ///@function cria_arma
-function cria_arma(_nome, _desc, _spr, _dano, _vel, _esp) constructor // Se eu personalizo eu coloco aqui
+function cria_arma(_nome, _desc, _spr, _dano, _vel, _esp, _ind_arm) constructor // Se eu personalizo eu coloco aqui
 {
 	//Criando o ID das armas	
 	//Variavel controlar todas as armas foram criadas
@@ -36,6 +38,9 @@ function cria_arma(_nome, _desc, _spr, _dano, _vel, _esp) constructor // Se eu p
 	dano = _dano;
 	vel = _vel;
 	esp = _esp;
+	//Qual o indice dela
+	ind_arma = _ind_arm;
+	
 
 
 	
@@ -45,6 +50,7 @@ function cria_arma(_nome, _desc, _spr, _dano, _vel, _esp) constructor // Se eu p
 		//Equipando a arma
 		//Ja sabemos que arma estamos usando no global.armas
 		global.arma_player = global.armas[| meu_id];
+		global.spr_ind_arma = ind_arma;
 		
 	}
 	
@@ -220,9 +226,9 @@ global.vida_player = 6;
 
 //Criando a minha arma
 var _a = new cria_arma("Espada de madeira", "Uma espada simples feita de madeira que no maximo vai machucar um pouco",
-				spr_espada2, 1, 1, ataque_especial_madeira);
-var _b = new cria_arma("Espada comum", "Uma espada comum com uma lamina muito afiada", spr_espada2, 2, 1, especial_espada_comum);
-var _c = new cria_arma("Espada de sangue", "Espada criada com as visceras de todos os monstros que foram executados por ela", spr_espada2, 4, .5, ataque_especial_sangue);
+				spr_espada2, 1, 1, ataque_especial_madeira, 1);
+var _b = new cria_arma("Espada comum", "Uma espada comum com uma lamina muito afiada", spr_espada2, 2, 1, especial_espada_comum, 2);
+var _c = new cria_arma("Espada de sangue", "Espada criada com as visceras de todos os monstros que foram executados por ela", spr_espada2, 4, .5, ataque_especial_sangue, 1);
 
 
 
