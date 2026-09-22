@@ -340,7 +340,7 @@ function ataque_especial_madeira()
 			layer_sequence_xscale(_seq, xscale);
 			
 			//Criar o projetil
-			var _tiro = instance_create_depth(x, y - sprite_height / 2, depth, obj_projetil);
+			var _tiro = instance_create_depth(x, y - sprite_height / 2, depth, obj_proj_agua);
 			_tiro.image_speed	=	 0;
 			_tiro.image_index	=	 0;
 			_tiro.speed			=	 5;

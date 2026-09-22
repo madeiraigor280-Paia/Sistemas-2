@@ -249,6 +249,8 @@
     {"name":"inst_119FE766","path":"rooms/rm_modelo/rm_modelo.yy",},
     {"name":"inst_473C6368","path":"rooms/rm_modelo/rm_modelo.yy",},
     {"name":"inst_7BBF98D","path":"rooms/rm_modelo/rm_modelo.yy",},
+    {"name":"inst_1A468ED7","path":"rooms/rm_modelo/rm_modelo.yy",},
+    {"name":"inst_3F060A5","path":"rooms/rm_modelo/rm_modelo.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -565,6 +567,10 @@
         {"$GMRInstance":"v4","%Name":"inst_7BBF98D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BBF98D","objectId":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},"propertyId":{"name":"item","path":"objects/obj_item/obj_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.armas[| armas.espada_comum];",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":480.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1A468ED7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1A468ED7","objectId":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":416.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3F060A5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F060A5","objectId":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_item","path":"objects/obj_item/obj_item.yy",},"propertyId":{"name":"item","path":"objects/obj_item/obj_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.armas[| armas.espada_sangue];",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":512.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Base","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Base","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":119,"TileCompressedData":[
           -2,-2147483648,-6,0,-26,-2147483648,-2,0,-19,-2147483648,-2,0,-12,-2147483648,-50,0,-2,-2147483648,-9,
