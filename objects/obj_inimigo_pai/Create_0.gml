@@ -54,7 +54,7 @@ controla_sprite = function()
 	//Se estou indo para a direita, eu olho para a direita
 	//Direita
 	var _face = _dir div 90;
-	show_debug_message(_face);
+	//show_debug_message(_face);
 	switch(_face)
 	{
 		case 0:

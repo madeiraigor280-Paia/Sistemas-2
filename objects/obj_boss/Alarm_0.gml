@@ -1,0 +1,1 @@
+barra_fogo = max_barra_fogo;

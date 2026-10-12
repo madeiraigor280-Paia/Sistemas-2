@@ -36,7 +36,7 @@ else
 //Se eu estou apertando para a esquerda ou para a direita, mas não os dois
 
 
-show_debug_message(image_ind);
+//show_debug_message(image_ind);
 
 efeito_dano();
 estado();

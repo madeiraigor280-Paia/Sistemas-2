@@ -4,8 +4,58 @@ event_inherited();
 vida_max = 20;
 vida_atual = vida_max;
 dano = 0;
+indice = 0;
+
 //Definindo as sprites
-sprites = [spr_boss_queimando,spr_boss_queimando, spr_boss_queimando, spr_boss_queimando];
+//sprites = [
+//				[spr_boss_queimando,spr_boss_queimando, spr_boss_queimando, spr_boss_queimando],
+//				[spr_boss_apagado, spr_boss_apagado, spr_boss_apagado, spr_boss_apagado]																			]
+sprites = [
+				//0 - Aceso/Queimando
+				[spr_boss_queimando, spr_boss_queimando, spr_boss_queimando, spr_boss_queimando],
+				//1 - Apagado
+				[spr_boss_apagado, spr_boss_apagado, spr_boss_apagado, spr_boss_apagado]
+			];
+
+
+//Fazer ele alternar entre fogo e apagado
+controla_sprite = function()
+{
+	var _dir = point_direction(0, 0, velh, velv);
+	
+	//Se estou indo para a direita, eu olho para a direita
+	//Direita
+	var _face = _dir div 90;
+	
+	//Escolhendo o grupo certo: aceso ou apagado, baseado na barra de fogo
+	var _grupo = (barra_fogo > 0) ? 0 : 1;
+	
+	switch(_face)
+	{
+		case 0:
+			sprite_index = sprites[_grupo][0];
+			image_xscale = 1;
+			break;
+		case 1:
+			sprite_index = sprites[_grupo][1];
+			break;
+		case 2:
+			sprite_index = sprites[_grupo][2];
+			image_xscale = -1;
+			break;
+		case 3:
+			sprite_index = sprites[_grupo][3];
+			break;
+	}
+		
+	
+	//Cima
+	//Esquerda
+	//Baixo
+	
+}
+
+
 
 me_apaguei = true;
 tempo_apagar = 600;
@@ -160,7 +210,7 @@ controla_estado = function()
 		
 		
 		//Uma cor diferente
-		image_blend = c_orange;
+		//image_blend = c_orange;
 		image_speed = 12 / room_speed;
 		
 		//Indo na direção do player
@@ -248,8 +298,8 @@ controla_estado = function()
 			//Ficando mais rapido
 			var _dir = point_direction(x, y, destino_x, destino_y);
 			
-			velh = lengthdir_x(max_vel * 3, _dir);
-			velv = lengthdir_y(max_vel * 3, _dir);
+			//velh = lengthdir_x(max_vel * 3, _dir);
+			//velv = lengthdir_y(max_vel * 3, _dir);
 			
 			//Se eu cheguei no meu destino, eu fico de boa
 			var _dist = point_distance(x, y, destino_x, destino_y);
@@ -303,6 +353,11 @@ controla_estado = function()
 				
 				}
 			}
+		}
+		else
+		{
+			estado = "parado";	
+			
 		}
 		
 		break;
